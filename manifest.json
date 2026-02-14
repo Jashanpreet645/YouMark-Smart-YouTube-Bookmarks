@@ -1,0 +1,47 @@
+{
+  "name": "YouMark – Smart YouTube Bookmarks",
+  "version": "1.0.0",
+  "description": "Save and manage timestamps inside YouTube videos instantly.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/bookmark.png",
+        "assets/play.png",
+        "assets/delete.png",
+        "assets/save.png"
+      ],
+      "matches": ["https://*.youtube.com/*"]
+    }
+  ],
+
+  "icons": {
+  "16": "assets/ext-icon16.png",
+  "32": "assets/ext-icon32.png",
+  "48": "assets/ext-icon48.png",
+  "128": "assets/ext-icon128.png"
+  },
+
+  "action": {
+  "default_icon": {
+    "16": "assets/ext-icon16.png",
+    "32": "assets/ext-icon32.png",
+    "48": "assets/ext-icon48.png",
+    "128": "assets/ext-icon128.png"
+  },
+  "default_title": "YouMark",
+  "default_popup": "popup.html"
+}
+,
+  "manifest_version": 3
+}
