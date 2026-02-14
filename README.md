@@ -102,9 +102,11 @@ YouMark/
 
 ## 📷 Screenshots
 
-![YouMark Screenshot](screenshots/image1.png)
-![YouMark Screenshot](screenshots/image2.png)
-![YouMark Screenshot](screenshots/image3.png)
+![YouMark Screenshot](screenshot/image1.png)
+
+![YouMark Screenshot](screenshot/image2.png)
+
+![YouMark Screenshot](screenshot/image3.png)
 
 
 ---
